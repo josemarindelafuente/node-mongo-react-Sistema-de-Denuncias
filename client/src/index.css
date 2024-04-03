@@ -19,6 +19,11 @@ h2 {
   padding: 2rem;
 }
 
+.cuerpo {
+  height: 80vh;
+}
+
+
 .bievenidos {
   background-color: #46347a;
   color: white;

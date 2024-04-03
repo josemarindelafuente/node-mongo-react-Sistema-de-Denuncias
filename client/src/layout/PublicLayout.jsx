@@ -5,7 +5,9 @@ export const PublicLayout = ( { children } ) => {
   return (
         <>
             <MenuWeb />
+         
             { children }
+            
             <FooterWeb/>
         </>
   )
