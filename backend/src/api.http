@@ -1,0 +1,73 @@
+//https://youtu.be/-9d3KhCqOtU?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&t=952
+
+
+### endpoint register
+## Registración de un usuario en el sistema
+POST http://localhost:3000/api/register HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+{
+  "username": "demo7",
+  "email": "usuarioHash7@gmail.com",
+  "password": "12345678",
+  "role": "User"
+}
+
+//----------------------------------------------------------------------------//
+### endpoint login
+## Login de usuario ingresando email y contraseña
+POST http://localhost:3000/api/login HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+{
+  "email": "usuarioHash6@gmail.com",
+  "password": "12345678"
+}
+
+//----------------------------------------------------------------------------//
+### endpoint logout
+## Logout del sistema, se elimina el token de acceso
+POST http://localhost:3000/api/logout HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+//----------------------------------------------------------------------------//
+### endpoint profile
+## Muestro los datos del usuario que ha ingresado
+GET http://localhost:3000/api/profile HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+//----------------------------------------------------------------------------//
+### endpoint Taks List
+## listo las tareas del usuario que hizo login
+GET http://localhost:3000/api/tasks HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+//----------------------------------------------------------------------------//
+### endpoint crear tarea
+POST http://localhost:3000/api/task HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+{
+  "title": "tarea 1 del usuario 7",
+  "description": "esta es la descripciones de la tarea 1 del usuario 7"
+}
+
+//----------------------------------------------------------------------------//
+### endpoint mostrar una tarea
+GET http://localhost:3000/api/task/660b51c7643c4e865f39850c HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------//
+### endpoint Denuncias List
+GET http://localhost:3000/api/denuncias HTTP/1.1
+content-type: application/json; charset=UTF-8

@@ -1,0 +1,22 @@
+//https://youtu.be/-9d3KhCqOtU?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&t=952
+
+//----------------------------------------------------------------------------//
+### LISTAR DENUNCIAS
+GET http://localhost:3000/api/denuncias HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+//----------------------------------------------------------------------------//
+### CREAR DENUNCIA
+POST http://localhost:3000/api/denuncia HTTP/1.1
+content-type: application/json; charset=UTF-8
+
+{
+  "title": "Denuncia numero 2",
+  "description": "descripcion de la denuncia 2"
+}
+
+//----------------------------------------------------------------------------//
+### MOSTRAR UNA DENUNCIA POR SU ID
+GET  http://localhost:3000/api/denuncia/660b5a2f9fc71eb235342dc0 HTTP/1.1
+content-type: application/json; charset=UTF-8
+

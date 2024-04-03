@@ -1,0 +1,17 @@
+.form_container {
+    width: 100%;
+    background-color: #c6c8ca;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 5px 76px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 5px 76px -13px rgba(0,0,0,0.75);
+  }
+
+@media only screen and (min-width: 992px) {
+
+    .form_container {
+        width: 600px;
+      }
+
+}

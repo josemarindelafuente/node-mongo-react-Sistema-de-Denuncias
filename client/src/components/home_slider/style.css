@@ -1,0 +1,10 @@
+.carousel-inner {
+    max-height: 650px;
+    object-fit:cover;
+}
+
+.carousel-item img {
+    max-height: 750px;
+    display: block;
+}
+
